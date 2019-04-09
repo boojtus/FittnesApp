@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aplikacjafitness">
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".PlecyZaawansowanyActivity"
+            android:label="@string/title_activity_plecy_zaawansowany"
+            android:parentActivityName=".Baza_zaawansowanyActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aplikacjafitness.Baza_zaawansowanyActivity" />
+        </activity>
+        <activity
+            android:name=".KlatkaZaawansowanyActivity"
+            android:label="@string/title_activity_klatka_zaawansowany"
+            android:parentActivityName=".Baza_zaawansowanyActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aplikacjafitness.Baza_zaawansowanyActivity" />
+        </activity>
+        <activity
+            android:name=".NogiZaawansowanyActivity"
+            android:label="@string/title_activity_nogi_zaawansowany"
+            android:parentActivityName=".Baza_zaawansowanyActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aplikacjafitness.Baza_zaawansowanyActivity" />
+        </activity>
+        <activity
+            android:name=".BrzuchZaawansowanyActivity"
+            android:label="@string/title_activity_brzuch_zaawansowany"
+            android:parentActivityName=".Baza_zaawansowanyActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aplikacjafitness.Baza_zaawansowanyActivity" />
+        </activity>
+        <activity
+            android:name=".TricepsZaawansowanyActivity"
+            android:label="@string/title_activity_triceps_zaawansowany"
+            android:parentActivityName=".Baza_zaawansowanyActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aplikacjafitness.Baza_zaawansowanyActivity" />
+        </activity>
+        <activity
+            android:name=".BicepsZaawansowanyActivity"
+            android:label="@string/title_activity_biceps_zaawansowany"
+            android:parentActivityName=".Baza_zaawansowanyActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aplikacjafitness.Baza_zaawansowanyActivity" />
+        </activity>
+        <activity
+            android:name=".BarkiZaawansowanyActivity"
+            android:label="@string/title_activity_barki_zaawansowany"
+            android:parentActivityName=".Baza_zaawansowanyActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aplikacjafitness.Baza_zaawansowanyActivity" />
+        </activity>
+        <activity
+            android:name=".PlecyActivity"
+            android:label="@string/title_activity_plecy"
+            android:parentActivityName=".BazaActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aplikacjafitness.BazaActivity" />
+        </activity>
+        <activity
+            android:name=".KlatkaActivity"
+            android:label="@string/title_activity_klatka"
+            android:parentActivityName=".BazaActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aplikacjafitness.BazaActivity" />
+        </activity>
+        <activity
+            android:name=".NogiActivity"
+            android:label="@string/title_activity_nogi"
+            android:parentActivityName=".BazaActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aplikacjafitness.BazaActivity" />
+        </activity>
+        <activity
+            android:name=".BrzuchActivity"
+            android:label="@string/title_activity_brzuch"
+            android:parentActivityName=".BazaActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aplikacjafitness.BazaActivity" />
+        </activity>
+        <activity
+            android:name=".TricepsActivity"
+            android:label="@string/title_activity_triceps"
+            android:parentActivityName=".BazaActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aplikacjafitness.BazaActivity" />
+        </activity>
+        <activity
+            android:name=".BicepsActivity"
+            android:label="@string/title_activity_biceps"
+            android:parentActivityName=".BazaActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aplikacjafitness.BazaActivity" />
+        </activity>
+        <activity
+            android:name=".BarkiActivity"
+            android:label="@string/title_activity_barki"
+            android:parentActivityName=".BazaActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aplikacjafitness.BazaActivity" />
+        </activity>
+        <activity
+            android:name=".Baza_zaawansowanyActivity"
+            android:label="@string/title_activity_baza_zaawansowany"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aplikacjafitness.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LogowanieActivity"
+            android:label="@string/title_activity_logowanie"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aplikacjafitness.MainActivity" />
+        </activity>
+        <activity
+            android:name=".WyzwanieActivity"
+            android:label="@string/title_activity_wyzwanie"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aplikacjafitness.MainActivity" />
+        </activity>
+        <activity
+            android:name=".BazaActivity"
+            android:label="@string/title_activity_baza"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aplikacjafitness.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TimerActivity"
+            android:label="@string/title_activity_timer"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aplikacjafitness.MainActivity" />
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

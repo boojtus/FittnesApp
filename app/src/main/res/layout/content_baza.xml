@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".BazaActivity"
+    tools:showIn="@layout/activity_baza">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <Button
+        android:id="@+id/barki_btn"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:onClick="click"
+        android:text="Barki"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/biceps_btn"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:onClick="click"
+        android:text="Biceps"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/triceps_btn"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:onClick="click"
+        android:text="Triceps"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/brzuch_btn"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:onClick="click"
+        android:text="Brzuch"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/nogi_btn"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:onClick="click"
+        android:text="Nogi"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/klatka_btn"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:onClick="click"
+        android:text="Klatka piersiowa"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/plecy_btn"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:onClick="click"
+        android:text="Plecy"
+        android:textSize="25dp" />
+    </LinearLayout>
+
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>
