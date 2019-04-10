@@ -26,23 +26,41 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="click"
-            android:text="timer" />
+            android:text="timer"
+            android:drawableRight="@drawable/ic_timer"
+            app:layout_constraintRight_toLeftOf="@+id/baza"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/baza"
             android:layout_width="97dp"
-            android:layout_height="match_parent"
+            android:layout_height="99dp"
             android:layout_weight="1"
+            android:drawableRight="@drawable/ic_data"
             android:onClick="click"
-            android:text="baza" />
+            android:text="baza"
+            app:layout_constraintRight_toLeftOf="@+id/wyzwania"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintLeft_toRightOf="@+id/timer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/wyzwania"
             android:layout_width="97dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:drawableRight="@drawable/ic_challange"
             android:onClick="click"
-            android:text="wyzwania" />
+            android:text="wyzwania"
+            app:layout_constraintRight_toLeftOf="@+id/logowanie"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintLeft_toRightOf="@+id/baza"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
 
         <Button
             android:id="@+id/logowanie"
@@ -50,7 +68,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="click"
-            android:text="Facebook" />
+            android:text="Facebook"
+            android:drawableRight="@drawable/ic_account"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintLeft_toRightOf="@+id/wyzwania"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </LinearLayout>
 
     <LinearLayout
