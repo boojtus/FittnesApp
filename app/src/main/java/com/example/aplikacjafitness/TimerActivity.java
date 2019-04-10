@@ -20,7 +20,7 @@ public class  TimerActivity extends AppCompatActivity {
     private Button mButtonReset;
 
     private CountDownTimer mCountDownTimer;
-
+//bry
     private boolean mTimerRunning;
 
     private long mTimeLeftInMillis = START_TIME_IN_MILLIS;
