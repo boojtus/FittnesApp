@@ -8,4 +8,120 @@
     tools:context=".BarkiZaawansowanyActivity"
     tools:showIn="@layout/activity_barki_zaawansowany">
 
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="16dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="397dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="              Barki"
+            android:textSize="45sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="404dp"
+            android:layout_height="349dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@drawable/barki123" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prawidłowa technika wykonania"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            tools:layout_editor_absoluteX="176dp"
+            tools:layout_editor_absoluteY="466dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Ustaw ławkę przed stojakami, na których kładziesz sztangę. Wejdź pod sztangę, tak by była na wysokości klatki, i złap ją nachwytem, tak by dłonie były nieco szerzej niż barki, a środek gryfu znajdował się nad głową. Usiądź na ławce, nogi stawiając w lekkim rozkroku. Plecy trzymaj wyprostowane, a twarz skierowaną prosto przed siebie. Wyciśnij sztangę prosto nad głowę. Zatrzymaj u góry, nie blokując ramion w łokciach, a następnie powoli opuść gryf do klatki piersiowej." />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Na poziomie zaawansowanym, barki ćwicz 2 razy na tydzień, rób od 3 do 5 serii w ćwiczeniu i od 6 do 8 powtórzeń, czas pomiędzy ćwiczeniami powinien wynosić od 90 do 240 sekund , wykonuj ćwiczenia troche szybciej niż zwykle"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/barkiunoseniegryfu" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A. Unoszenie ramienia przy wyciągu dolnym. Stań tyłem do wyciągu dolnego w lekkim rozkroku i chwyć jedną ręką jego linkę. Drugą rękę oprzyj na biodrze. Z tej pozycji wykonaj wznos wyprostowanego ramienia przed siebie, do góry, do linii barków. Wstrzymaj na chwilę ruch i powoli wróć do pozycji wyjściowej."
+            android:textSize="14sp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/barkiaa" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="B. Unoszenie ramienia w bok stojąc. Stań w lekkim rozkroku. Chwyć sztangielkę i przy lekko zgiętym ramieniu trzymaj wzdłuż tułowia. Drugą rękę oprzyj na biodrze. Z tej pozycji unieś ramię szerokim bocznym łukiem do linii barków. Wstrzymaj na chwilę ruch, a następnie wróć do pozycji wyjściowej."
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/barkibbb" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="C. Wznosy ramion na ławce skośnej. Usiądź na ławeczce skośnej (kąt nachylenia oparcia około 45 stopni), opierając brzuch i klatkę o ławeczkę, głowa lekko uniesiona. Sztangielki trzymaj w wyprostowanych ramionach wzdłuż tułowia przed sobą. Z tej pozycji szerokim łukiem wykonaj wznos ramion do góry do linii barków. Wstrzymaj na chwilę ruch i wróć do pozycji wyjściowej."
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/barkicc" />
+    </LinearLayout>
+</ScrollView>
+
 </android.support.constraint.ConstraintLayout>
