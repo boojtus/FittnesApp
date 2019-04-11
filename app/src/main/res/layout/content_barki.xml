@@ -8,4 +8,134 @@
     tools:context=".BarkiActivity"
     tools:showIn="@layout/activity_barki">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="397dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="              Barki"
+                android:textSize="45sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="404dp"
+                android:layout_height="349dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:srcCompat="@drawable/barki123" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prawidłowa technika wykonania"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="466dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Ustaw ławkę przed stojakami, na których kładziesz sztangę. Wejdź pod sztangę, tak by była na wysokości klatki, i złap ją nachwytem, tak by dłonie były nieco szerzej niż barki, a środek gryfu znajdował się nad głową. Usiądź na ławce, nogi stawiając w lekkim rozkroku. Plecy trzymaj wyprostowane, a twarz skierowaną prosto przed siebie. Wyciśnij sztangę prosto nad głowę. Zatrzymaj u góry, nie blokując ramion w łokciach, a następnie powoli opuść gryf do klatki piersiowej." />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Na poziomie początkującym, barki ćwicz 3 razy na tydzień, 3 serie w ćwieczeniu i od 10 do 15 powtóreń, czas pomiędzy ćwiczeniami powinien wynosić od 30 do 60 sekund "
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/barki12" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:text="Dłonie. Sztangę trzymaj nachwytem, a dłonie niech będę rozstawione na szerokość barków. Gryf powinien leżeć na środku dłoni, tak by ciężar sztangi działał w jednej linii na nadgarstki i łokcie. Nadgarstki. Nadgarstki trzymaj w jednej linii z przedramionami. Spowoduje to przenoszenie obciążeń przez ramiona, a nie na stawy.   Łokcie. Na początku ćwiczenia trzymaj je w jednej linii z tułowiem, a potem przez cały czas skierowane ku dołowi. Unikaj blokowania ich, kiedy już uniesiesz ciężar. Napięte przez cały czas mięśnie powodują mniejsze obciążenie stawów.   Klatka. Opuszczaj gryf do górnej części klatki piersiowej. Gdy zejdzie niżej, spowoduje większe obciążenie ścięgien przedniej części mięśnia naramiennego oraz stawu barkowego, co może prowadzić do kontuzji.  Plecy. Unikaj wyginania pleców do tyłu i staraj się również nie pochylać. Nie tylko zwiększa to ryzyko kontuzji, ale powoduje również, że część pracy wykonują mięśnie klatki piersiowej.   Głowa. Powinna być wyprostowana, a szyja cały czas w jednej linii z kręgosłupem. Pochylanie głowy do przodu lub do tyłu powoduje niepotrzebne napięcia mięśni szyi i czworobocznego pleców.  Oczy. Patrz prosto przed siebie. Unikaj unoszenia brody i nie kontroluj wzrokiem sztangi.  Nogi. Siedząc na ławce, trzymaj nogi w rozkroku, zgięte w kolanach. Ułatwi Ci to utrzymanie równowagi w czasie unoszenia ciężaru.  Stopy. Powinny spoczywać płasko na podłożu i być ustawione palcami na zewnątrz.  Ważne szczegóły:  Szerokie możliwości. Szerszy uchwyt mocniej angażuje mięśnie naramienne, gdyż mniejszą pracę wykonują wtedy tricepsy.  Wykorzystaj pauzę. Kiedy opuszczasz gryf, zatrzymaj go na sekundę lub dwie, kiedy jest na wysokości Twoich oczu. Dopiero po chwili opuść go do klatki piersiowej. To powoduje szybsze zmęczenie mięśni, dzięki czemu wykonasz pracę z mniejszymi ciężarami i bez przeciążania stawów.  Obniż na plecy. Jeśli masz pewien problem z opuszczaniem sztangi na klatkę, zobacz, jak wychodzi Ci obniżanie jej na plecy. Nie pochylaj jednak przy tym do przodu głowy.  Twój plan  Idealne barki wymagają wykonywania ćwiczeń, które będą w równym stopniu wzmacniały i powiększały wszystkie trzy części tej partii mięśnia naramiennego: przednią, środkową i tylną. Trening złożony z ćwiczeń, które zobaczysz na następnych stronach, spełnia ten warunek.  Po głównym ćwiczeniu, czyli wyciskaniu sztangi nad głowę siedząc, zrób po jednym ćwiczeniu z każdej z trzech grup, na które są podzielone. Grupa A angażuje najmocniej przednią część mięśnia naramiennego, grupa B - środkową, a grupa C - tylną. Liczbę serii, powtórzeń i czas przerw odpoczynkowych wybierz z tabeli poniżej, zgodnie z Twoim poziomem i możliwościami."
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/barkiunoseniegryfu" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A. Unoszenie gryfu na prostych ramionach Stań w lekkim rozkroku. Chwyć gryf sztangi nachwytem na szerokości barków i trzymaj w wyprostowanych ramionach wzdłuż ciała. Z tej pozycji unieś powoli sztangę szerokim łukiem, do linii barków. Nie zginaj ramion. Zrób pauzę i następnie wróć do pozycji wyjściowej."
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/barkia" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="B. Unoszenie ramienia w bok stojąc  Stań w lekkim rozkroku. Chwyć sztangielkę i przy lekko zgiętym ramieniu trzymaj wzdłuż tułowia. Drugą rękę oprzyj na biodrze. Z tej pozycji unieś ramię szerokim bocznym łukiem do linii barków. Wstrzymaj na chwilę ruch, a następnie wróć do pozycji wyjściowej."
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/barkib" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="C. Wznosy ramion w opadzie tułowia Stań w lekkim rozkroku ze sztangielkami trzymanymi przed sobą chwytem neutralnym. Wykonaj opad tułowia, tak aby był on równoległy do podłoża, a ramiona swobodnie zwisały. Unieś sztangielki szerokim łukiem do linii barków. Wstrzymaj na chwilę ruch i powoli opuść do pozycji wyjściowej. Ramiona powinny być wyprostowane w łokciach."
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/barkic" />
+        </LinearLayout>
+    </ScrollView>
+
 </android.support.constraint.ConstraintLayout>
