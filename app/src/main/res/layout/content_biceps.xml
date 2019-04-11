@@ -8,4 +8,142 @@
     tools:context=".BicepsActivity"
     tools:showIn="@layout/activity_biceps">
 
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="16dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="397dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="              Biceps"
+            android:textSize="45sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="404dp"
+            android:layout_height="349dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@drawable/biceps1" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="1. Mięsień dwugłowy ramienia znajduje się w przedniej części ramienia, tuż pod skórą, i łączy dwa stawy: ramienny i łokciowy. Składa się z dwóch części, zwanych głowami. Jedna z nich za pośrednictwem ścięgna bicepsowego łączy się ze środkiem łopatki. Druga, nieco krótsza, łączy się z haczykowatą częścią łopatki. Obie głowy zbiegają się poniżej barku i wspólny ich koniec dociera do kości promieniowej - jednej z dwóch kości przedramienia." />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="2. Mięsień ramienny znajduje się pomiędzy bicepsem i kością ramienną (tak, to ta w ramieniu). Tego mięśnia wprawdzie nie widzisz, ale jego powiększanie powoduje wypychanie dwugłowego, a to już widać na krawieckiej miarce, którą mierzysz obwód ramienia. Oba mięśnie są zginaczami i biorą udział w unoszeniu, zginaniu przedramienia oraz pracują przy obracaniu dłoni i przedramienia, tak by dłoń była ku górze." />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prawidłowa technika wykonania"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            tools:layout_editor_absoluteX="176dp"
+            tools:layout_editor_absoluteY="466dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Złap sztangę podchwytem, trzymając dłonie na szerokości barków. W początkowej fazie ramiona powinny być wyprostowane, tak by sztanga prawie opierała się o uda. Trzymając proste plecy i wciągnięte mięśnie brzucha, unieś sztangę ruchem półkolistym, aż przedramiona dotkną bicepsów. Zatrzymaj sztangę na moment zanim jeszcze Twoje przedramiona będą prostopadłe do podłoża, a następnie opuść ją do pozycji startowej." />
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Na poziomie początkującym, biceps ćwicz 3 razy na tydzień, 3 serie w ćwieczeniu i od 10 do 15 powtóreń, czas pomiędzy ćwiczeniami powinien wynosić od 30 do 60 sekund "
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:text="Głowa. Zawsze trzymaj ją w jednej linii z górną częścią pleców. Skręt głowy, by zobaczyć pracujący biceps, albo spojrzenie w dół na sztangę powodują dodatkowe napięcia mięśni szyi, które już i tak mocno pracują. Dla pewności, doskonal technikę przed lustrem. Barki. Kiedy sztanga jest maksymalnie w górze, pięści powinny być dokładnie naprzeciwko barków. Jeśli tak nie jest (pięści są powyżej lub poniżej), to znaczy, że poruszyłeś ramionami i podniosłeś lub cofnąłeś łokcie w czasie ćwiczenia. Ramiona. Trzymaj je blisko ciała, niejako przyklejone do tułowia. Wysunięcie ich ku przodowi może oznaczać wygięcie pleców. Odchylenie na boki powoduje, że nadgarstki i ramiona nie są w jednej linii, co zwiększa obciążenie ścięgien w nadgarstku. Przedramiona. To jedyna część ciała, która powinna się poruszać w trakcie tego ćwiczenia. Unieś sztangę na tyle wysoko, by górna część przedramion dotykała bicepsu. Nadgarstki. Utrzymuj je w jednej linii z przedramionami. Gdy nadgarstki przegrają ze sztangą, ścięgna tego stawu zostaną dodatkowo obciążone. Dłonie. Złap sztangę podchwytem, mając dłonie na szerokości barków. Podnosząc sztangę, zaciśnij palce. Nie ściskaj zbyt mocno, bo dłonie zmęczą się szybciej niż bicepsy. Nogi. Kiedy opuścisz sztangę, powinna ona prawie dotykać ud, ale nie może na nich odpoczywać. Spowoduje to mniejszą pracę bicepsów. Kolana. Nie blokuj ich, ale też ich nie zginaj. Zginanie kolan w którymkolwiek momencie ćwiczenia oznacza, że wspomagasz pracę przedramion. Stopy. Rozstaw je na szerokość barków i niech stykają się z podłogą całą powierzchnią. Kołysanie się na stopach zmniejsza stabilność i ułatwia zadanie. Plecy. Kręgosłup powinien być prosty, ustawiony w naturalnej pozycji. Jego wygięcie do przodu lub tyłu sprawia, że wzrastają naprężenia w odcinku lędźwiowym. A tego przecież nie chcesz. Łokcie. Łokcie utrzymuj blisko ciała i w taki sposób, by były skierowane ku ziemi. Jeśli tak nie jest, znaczy to, że ułatwiasz sobie ćwiczenie. Przydatne wskazówki, żeby bicepsy rosły: Zmieniaj uchwyt. Rozsuń ręce o kilka centymetrów szerzej, a bardziej będzie pracować wewnętrzna część bicepsa. Przesuniesz dłonie nieco do środka - zwiększysz pracę jego części zewnętrznej. Zmieniaj przyrządy. Zanim zaczniesz unosić sztangę, nieco odchyl nadgarstki. Taki uchwyt w trakcie ćwiczenia zmniejsza naprężenie przedramion, zwiększając jednocześnie pracę bicepsów. Dopasuj ciężar. Owiń sztangę małym ręcznikiem. Zmusi to dłonie, nadgarstki i przedramiona do większego wysiłku - oznacza to pracę nad mocnym chwytem. Trenuj w pozycji klęczącej. Załóż na sztangę ciężar o 20% mniejszy niż zwykle i wykonaj unoszenie przedramion, klęcząc. Utrudni Ci to oszukiwanie."
+            android:textSize="18sp" />
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/biceps2" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A. Unoszenie ramion na modlitewniku. Usiądź przy modlitewniku (doskonały przyrząd do ćwiczenia bicepsów, zapewniający prawie całkowitą ich izolację) i chwyć sztangę łamaną, trzymając dłonie rozstawione na szerokość barków. Łokcie oprzyj o podpórkę urządzenia. Zaczynając w tej pozycji, unieś przedramiona i sztangę. Zatrzymaj na moment i powoli opuść do pozycji wyjściowej. Podczas ćwiczenia nie prostuj do końca ramion w łokciach."
+            android:textSize="14sp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bicepsa" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="B. Unoszenie sztangielek stojąc. Stań w lekkim rozkroku, ręce proste w łokciach. Chwyć sztangielki podchwytem przed sobą. Z tej pozycji unieś przedramiona ze sztangielkami. Wstrzymaj ruch na kilka sekund w najwyższym punkcie. Następnie powoli wróć do pozycji wyjściowej. Podczas ćwiczenia zachowaj wyprostowany kręgosłup i nie wykonuj ruchów tułowiem wspomagających podnoszenie sztangielek. Jeśli nie dajesz rady, zmniejsz obciążenie."
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bicepsaa" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="C. Unoszenie sztangielek w chwycie młotkowym. Stań w lekkim rozkroku, chwyć oburącz sztangielki chwytem neutralnym, zwanym też młotkowym. Z tej pozycji unieś ciężarki. Wstrzymaj ruch na 2-3 sekundy w najwyższym punkcie. Następnie powoli wróć do pozycji wyjściowej. Podczas ćwiczenia napnij mięśnie brzucha i cały czas trzymaj wyprostowany kręgosłup."
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bicepsb" />
+    </LinearLayout>
+</ScrollView>
+
 </android.support.constraint.ConstraintLayout>
