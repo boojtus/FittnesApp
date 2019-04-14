@@ -6,6 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="243dp"
+        android:layout_height="248dp"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="82dp" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="396dp"
@@ -62,6 +80,8 @@
             app:layout_constraintTop_toTopOf="parent"
             />
 
+
+        <!--
         <Button
             android:id="@+id/logowanie"
             android:layout_width="97dp"
@@ -75,6 +95,7 @@
             app:layout_constraintLeft_toRightOf="@+id/wyzwania"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+            -->
     </LinearLayout>
 
     <LinearLayout

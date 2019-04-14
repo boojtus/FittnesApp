@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.logowanie:
-                intent = new Intent(MainActivity.this, LogowanieActivity.class);
+                intent = new Intent(MainActivity.this, LogAvtivity.class);
                 startActivity(intent);
                 break;
 
