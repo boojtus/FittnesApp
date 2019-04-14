@@ -1,5 +1,6 @@
 package com.example.aplikacjafitness;
 
+import android.content.SharedPreferences;
 import android.os.CountDownTimer;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -13,17 +14,23 @@ import android.widget.TextView;
 import java.util.Locale;
 
 public class  TimerActivity extends AppCompatActivity {
-    private static final long START_TIME_IN_MILLIS = 600000;
+    int sekundy = 30;
+    int seria = 1;
 
     private TextView mTextViewCountDown;
     private Button mButtonStartPause;
     private Button mButtonReset;
+    private Button Decrease;
+    private Button Increase;
+    TextView Seria;
 
     private CountDownTimer mCountDownTimer;
 //bry
     private boolean mTimerRunning;
 
-    private long mTimeLeftInMillis = START_TIME_IN_MILLIS;
+    boolean s1=true;
+
+    private long mTimeLeftInMillis = sekundy * 1000;
     private long mEndTime;
 
     @Override
@@ -37,8 +44,15 @@ public class  TimerActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         mTextViewCountDown = findViewById(R.id.text_view_countdown);
 
+        Seria = findViewById(R.id.seria);
+
         mButtonStartPause = findViewById(R.id.button_start_pause);
         mButtonReset = findViewById(R.id.button_reset);
+
+        Increase = findViewById(R.id.increase);
+        Decrease = findViewById(R.id.decrease);
+        Decrease.setVisibility(View.VISIBLE);
+        Increase.setVisibility(View.VISIBLE);
 
         mButtonStartPause.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +60,11 @@ public class  TimerActivity extends AppCompatActivity {
                 if (mTimerRunning) {
                     pauseTimer();
                 } else {
+                    if(s1 == true) {
+                        seria++;
+                        Seria.setText(Integer.toString(seria));
+                    }
+                    s1 = false;
                     startTimer();
                 }
             }
@@ -58,6 +77,17 @@ public class  TimerActivity extends AppCompatActivity {
             }
         });
 
+        updateCountDownText();
+    }
+
+    public void Increse (View view){
+        sekundy++;
+        mTimeLeftInMillis = sekundy * 1000;
+        updateCountDownText();
+    }
+    public void Decrease (View view){
+        if(sekundy>30)sekundy--;
+        mTimeLeftInMillis = sekundy * 1000;
         updateCountDownText();
     }
 
@@ -79,6 +109,8 @@ public class  TimerActivity extends AppCompatActivity {
         }.start();
 
         mTimerRunning = true;
+        Decrease.setVisibility(View.INVISIBLE);
+        Increase.setVisibility(View.INVISIBLE);
         updateButtons();
     }
 
@@ -89,7 +121,10 @@ public class  TimerActivity extends AppCompatActivity {
     }
 
     private void resetTimer() {
-        mTimeLeftInMillis = START_TIME_IN_MILLIS;
+        mTimeLeftInMillis = sekundy * 1000;
+        Decrease.setVisibility(View.VISIBLE);
+        Increase.setVisibility(View.VISIBLE);
+        s1 = true;
         updateCountDownText();
         updateButtons();
     }
@@ -116,7 +151,7 @@ public class  TimerActivity extends AppCompatActivity {
                 mButtonStartPause.setVisibility(View.VISIBLE);
             }
 
-            if (mTimeLeftInMillis < START_TIME_IN_MILLIS) {
+            if (mTimeLeftInMillis < sekundy * 1000) {
                 mButtonReset.setVisibility(View.VISIBLE);
             } else {
                 mButtonReset.setVisibility(View.INVISIBLE);
@@ -124,27 +159,49 @@ public class  TimerActivity extends AppCompatActivity {
         }
     }
 
+
     @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putLong("millisLeft", mTimeLeftInMillis);
-        outState.putBoolean("timerRunning", mTimerRunning);
-        outState.putLong("endTime", mEndTime);
+    protected void onStop() {
+        super.onStop();
+
+        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+
+        editor.putLong("millisLeft", mTimeLeftInMillis);
+        editor.putBoolean("timerRunning", mTimerRunning);
+        editor.putLong("endTime", mEndTime);
+
+        editor.apply();
+
+        if (mCountDownTimer != null) {
+            mCountDownTimer.cancel();
+        }
     }
 
     @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
+    protected void onStart() {
+        super.onStart();
 
-        mTimeLeftInMillis = savedInstanceState.getLong("millisLeft");
-        mTimerRunning = savedInstanceState.getBoolean("timerRunning");
+        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+
+        mTimeLeftInMillis = prefs.getLong("millisLeft", sekundy * 1000);
+        mTimerRunning = prefs.getBoolean("timerRunning", false);
+
         updateCountDownText();
         updateButtons();
 
         if (mTimerRunning) {
-            mEndTime = savedInstanceState.getLong("endTime");
+            mEndTime = prefs.getLong("endTime", 0);
             mTimeLeftInMillis = mEndTime - System.currentTimeMillis();
-            startTimer();
+
+            if (mTimeLeftInMillis < 0) {
+                mTimeLeftInMillis = 0;
+                mTimerRunning = false;
+                updateCountDownText();
+                updateButtons();
+            } else {
+                startTimer();
+            }
         }
     }
 }
