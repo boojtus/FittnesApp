@@ -1,29 +1,36 @@
 package com.example.aplikacjafitness;
 
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.CountDownTimer;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.media.MediaPlayer;
+import android.widget.Toast;
 
 import java.util.Locale;
 
 public class  TimerActivity extends AppCompatActivity {
-    int sekundy = 30;
-    int seria = 1;
+
+    public MediaPlayer beep;
 
     private TextView mTextViewCountDown;
     private Button mButtonStartPause;
     private Button mButtonReset;
     private Button Decrease;
     private Button Increase;
+    private Button Resetserii;
     TextView Seria;
 
+
+    int sekundy, seria ;
     private CountDownTimer mCountDownTimer;
 //bry
     private boolean mTimerRunning;
@@ -33,24 +40,39 @@ public class  TimerActivity extends AppCompatActivity {
     private long mTimeLeftInMillis = sekundy * 1000;
     private long mEndTime;
 
+    //beep = MediaPlayer.create(getApplicationContext(), R.raw.beep);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timer);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        beep = MediaPlayer.create(this, R.raw.beep);
+        //MediaPlayer beep= MediaPlayer.create(MainActivity.this,R.raw.beep);
 
+        if (savedInstanceState != null){
+            sekundy = savedInstanceState.getInt("t");
+            seria = savedInstanceState.getInt("s");
+        }
+        else if(savedInstanceState == null){
+            sekundy = 30;
+            seria = 1;
+        }
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         mTextViewCountDown = findViewById(R.id.text_view_countdown);
 
         Seria = findViewById(R.id.seria);
+        Seria.setText(Integer.toString(seria));
 
         mButtonStartPause = findViewById(R.id.button_start_pause);
         mButtonReset = findViewById(R.id.button_reset);
 
         Increase = findViewById(R.id.increase);
         Decrease = findViewById(R.id.decrease);
+        Resetserii = findViewById(R.id.Reset_serii);
+
         Decrease.setVisibility(View.VISIBLE);
         Increase.setVisibility(View.VISIBLE);
 
@@ -65,10 +87,14 @@ public class  TimerActivity extends AppCompatActivity {
                         Seria.setText(Integer.toString(seria));
                     }
                     s1 = false;
+                    Resetserii.setVisibility(View.INVISIBLE);
                     startTimer();
                 }
             }
         });
+
+
+
 
         mButtonReset.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,6 +106,27 @@ public class  TimerActivity extends AppCompatActivity {
         updateCountDownText();
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle savedInstanceState) {
+        //super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putInt("t", sekundy);
+        savedInstanceState.putInt("s", seria);
+        super.onSaveInstanceState(savedInstanceState);
+    }
+    /*@Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putInt("t", sekundy);
+        outState.putInt("s", seria);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        sekundy = savedInstanceState.getInt("s");
+        seria = savedInstanceState.getInt("t");
+
+    }*/
+
     public void Increse (View view){
         sekundy++;
         mTimeLeftInMillis = sekundy * 1000;
@@ -89,6 +136,12 @@ public class  TimerActivity extends AppCompatActivity {
         if(sekundy>30)sekundy--;
         mTimeLeftInMillis = sekundy * 1000;
         updateCountDownText();
+    }
+    public void Reset_serii (View view){
+        if(s1 == true) {
+            seria = 1;
+            Seria.setText(Integer.toString(seria));
+        }
     }
 
     private void startTimer() {
@@ -125,6 +178,8 @@ public class  TimerActivity extends AppCompatActivity {
         Decrease.setVisibility(View.VISIBLE);
         Increase.setVisibility(View.VISIBLE);
         s1 = true;
+
+        Resetserii.setVisibility(View.VISIBLE);
         updateCountDownText();
         updateButtons();
     }
@@ -132,10 +187,15 @@ public class  TimerActivity extends AppCompatActivity {
     private void updateCountDownText() {
         int minutes = (int) (mTimeLeftInMillis / 1000) / 60;
         int seconds = (int) (mTimeLeftInMillis / 1000) % 60;
+        if(seconds<6){
+            //TU MUZYKA GRAC BEDZIE
+            beep.start();
+        }
 
         String timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
 
         mTextViewCountDown.setText(timeLeftFormatted);
+        Seria.setText(Integer.toString(seria));
     }
 
     private void updateButtons() {
@@ -156,6 +216,7 @@ public class  TimerActivity extends AppCompatActivity {
             } else {
                 mButtonReset.setVisibility(View.INVISIBLE);
             }
+
         }
     }
 
@@ -170,6 +231,8 @@ public class  TimerActivity extends AppCompatActivity {
         editor.putLong("millisLeft", mTimeLeftInMillis);
         editor.putBoolean("timerRunning", mTimerRunning);
         editor.putLong("endTime", mEndTime);
+        editor.putInt("sekundy",sekundy);
+        editor.putInt("seria",seria);
 
         editor.apply();
 
@@ -186,6 +249,8 @@ public class  TimerActivity extends AppCompatActivity {
 
         mTimeLeftInMillis = prefs.getLong("millisLeft", sekundy * 1000);
         mTimerRunning = prefs.getBoolean("timerRunning", false);
+        sekundy = prefs.getInt("sekundy",sekundy);
+        seria = prefs.getInt("seria",seria);
 
         updateCountDownText();
         updateButtons();
@@ -193,6 +258,8 @@ public class  TimerActivity extends AppCompatActivity {
         if (mTimerRunning) {
             mEndTime = prefs.getLong("endTime", 0);
             mTimeLeftInMillis = mEndTime - System.currentTimeMillis();
+
+
 
             if (mTimeLeftInMillis < 0) {
                 mTimeLeftInMillis = 0;
