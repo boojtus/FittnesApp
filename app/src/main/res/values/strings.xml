@@ -1,4 +1,7 @@
 <resources>
+    <string name="facebook_app_id">501448507053968</string>
+    <string name="fb_login_protocol_scheme">fb501448507053968</string>
+
     <string name="app_name">AplikacjaFitness</string>
     <string name="title_activity_timer">TimerActivity</string>
     <string name="title_activity_baza">BazaActivity</string>
@@ -31,4 +34,5 @@
     <string name="title_activity_nogi_zaawansowany">NogiZaawansowanyActivity</string>
     <string name="title_activity_klatka_zaawansowany">KlatkaZaawansowanyActivity</string>
     <string name="title_activity_plecy_zaawansowany">PlecyZaawansowanyActivity</string>
+    <string name="title_activity_log_avtivity">LogAvtivity</string>
 </resources>
