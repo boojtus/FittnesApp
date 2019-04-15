@@ -69,7 +69,7 @@ public class  TimerActivity extends AppCompatActivity {
         mButtonStartPause = findViewById(R.id.button_start_pause);
         mButtonReset = findViewById(R.id.button_reset);
 
-        Increase = findViewById(R.id.increase);
+        Increase = findViewById(R.id.plus);
         Decrease = findViewById(R.id.decrease);
         Resetserii = findViewById(R.id.Reset_serii);
 

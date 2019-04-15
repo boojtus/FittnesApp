@@ -1,10 +1,9 @@
 <resources>
     <string name="facebook_app_id">501448507053968</string>
     <string name="fb_login_protocol_scheme">fb501448507053968</string>
-
     <string name="app_name">AplikacjaFitness</string>
-    <string name="title_activity_timer">TimerActivity</string>
-    <string name="title_activity_baza">BazaActivity</string>
+    <string name="title_activity_timer">Twój trening</string>
+    <string name="title_activity_baza">Baza ćwiczeń</string>
     <string name="title_activity_wyzwanie">WyzwanieActivity</string>
     <string name="title_activity_logowanie">Logowanie</string>
     <!-- Strings related to login -->
@@ -19,20 +18,20 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-    <string name="title_activity_baza_zaawansowany">Baza_zaawansowanyActivity</string>
-    <string name="title_activity_barki">BarkiActivity</string>
-    <string name="title_activity_biceps">BicepsActivity</string>
-    <string name="title_activity_triceps">TricepsActivity</string>
-    <string name="title_activity_brzuch">BrzuchActivity</string>
-    <string name="title_activity_nogi">NogiActivity</string>
-    <string name="title_activity_klatka">KlatkaActivity</string>
-    <string name="title_activity_plecy">PlecyActivity</string>
-    <string name="title_activity_barki_zaawansowany">BarkiZaawansowanyActivity</string>
-    <string name="title_activity_biceps_zaawansowany">BicepsZaawansowanyActivity</string>
-    <string name="title_activity_triceps_zaawansowany">TricepsZaawansowanyActivity</string>
-    <string name="title_activity_brzuch_zaawansowany">BrzuchZaawansowanyActivity</string>
-    <string name="title_activity_nogi_zaawansowany">NogiZaawansowanyActivity</string>
-    <string name="title_activity_klatka_zaawansowany">KlatkaZaawansowanyActivity</string>
-    <string name="title_activity_plecy_zaawansowany">PlecyZaawansowanyActivity</string>
+    <string name="title_activity_baza_zaawansowany">Baza ćwiczeń dla zaawansowanych</string>
+    <string name="title_activity_barki">Barki dla podstawowych</string>
+    <string name="title_activity_biceps">Biceps dla podstawowych</string>
+    <string name="title_activity_triceps">Triceps dla podstawowych</string>
+    <string name="title_activity_brzuch">Brzuch dla podstawowych</string>
+    <string name="title_activity_nogi">Nogi dla podstawowych</string>
+    <string name="title_activity_klatka">Klatka dla podstawowych</string>
+    <string name="title_activity_plecy">Plecy dla podstawowych</string>
+    <string name="title_activity_barki_zaawansowany">Barki dla zaawansowanych</string>
+    <string name="title_activity_biceps_zaawansowany">Biceps dla zaawansowanych</string>
+    <string name="title_activity_triceps_zaawansowany">Triceps dla zaawansowanych</string>
+    <string name="title_activity_brzuch_zaawansowany">Brzuch dla zaawansowanych</string>
+    <string name="title_activity_nogi_zaawansowany">Nogi dla zaawansowanych</string>
+    <string name="title_activity_klatka_zaawansowany">Klatka dla zaawansowanych</string>
+    <string name="title_activity_plecy_zaawansowany">Plecy dla zaawansowanych</string>
     <string name="title_activity_log_avtivity">LogAvtivity</string>
 </resources>
